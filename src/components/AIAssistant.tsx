@@ -82,7 +82,7 @@ const AIAssistant = ({ onBack }: AIAssistantProps) => {
       return "I've received your " + (q.includes("voice") ? "voice" : "image") + " input. Based on what you've shared:\n\n• I'll analyze this information according to health protocols\n• If any danger signs are present, I'll alert you immediately\n• Please provide additional context if needed\n\nWhat else would you like to know?";
     }
 
-    return "I understand you're asking about: \"" + question + "\"\n\nFor the most accurate guidance, please:\n1. Describe the patient's age and symptoms\n2. Mention any danger signs\n3. Let me know the duration of the problem\n\nOr choose from the quick questions below for common topics.";
+    return "I understand you are asking about: \"" + question + "\"\n\nFor the most accurate guidance, please:\n1. Describe the patient's age and symptoms\n2. Mention any danger signs\n3. Let me know the duration of the problem\n\nOr choose from the quick questions below for common topics.";
   };
 
   const handleVoiceToggle = async () => {
